@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:10.333
+Analiza una fuente por entrada, protección, conversión, filtrado y distribución. Comprueba primero qué tensión necesita cada bloque y cuándo debe aparecer.
+
+00:00:10.333 --> 00:00:19.333
+En un regulador didáctico con entrada de 5 V y salida de 3,3 V, mide ambas respecto a su referencia antes de culpar al regulador.
+
+00:00:19.333 --> 00:00:27.667
+Salida baja con entrada correcta puede deberse a sobrecarga, habilitación ausente o fallo del regulador. Una lectura no los separa.
+
+00:00:27.667 --> 00:00:34.000
+Los ejemplos son de baja tensión; no practiques mediciones de red con este procedimiento básico.
+

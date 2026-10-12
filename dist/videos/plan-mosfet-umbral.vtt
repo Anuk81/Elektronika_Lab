@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:15.667
+La tensión de umbral se especifica a una corriente de prueba pequeña. Para controlar una carga debes consultar RDS(on) a una tensión de puerta compatible con tu mando. Considera también carga de puerta, tensión máxima y disipación.
+
+00:00:15.667 --> 00:00:23.333
+Un MOSFET puede comenzar a conducir a una tensión baja y aun así presentar una resistencia excesiva para la carga deseada.
+
+00:00:23.333 --> 00:00:32.333
+Un mando de 3,3 V exige verificar especificaciones a esa tensión; una curva a 10 V no demuestra el mismo comportamiento.
+
+00:00:32.333 --> 00:00:36.667
+Usa VGS, no gate respecto a un punto arbitrario.
+

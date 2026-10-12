@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:13.000
+Los fallos intermitentes exigen anotar cuándo aparecen: tiempo de funcionamiento, carga, temperatura y estado de conectores. Busca una correlación reproducible sin forzar condiciones peligrosas.
+
+00:00:13.000 --> 00:00:22.000
+Una conexión deficiente puede provocar una caída que solo aparece al circular corriente. Una prueba estática sin carga puede parecer normal.
+
+00:00:22.000 --> 00:00:29.000
+Un fallo tras calentarse puede tener varias causas; registra señales y alimentaciones antes y durante el fallo.
+
+00:00:29.000 --> 00:00:35.000
+No flexiones una placa energizada ni apliques calor sin procedimiento y control adecuados.
+

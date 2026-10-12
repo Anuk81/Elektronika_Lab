@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:15.667
+Una captura digital toma muestras discretas. Si la frecuencia de muestreo es insuficiente, una señal rápida puede parecer más lenta o cambiar de forma. La relación entre ancho de banda, muestreo, longitud de registro y tiempo observado importa.
+
+00:00:15.667 --> 00:00:21.667
+Una senoide observada con muy pocas muestras por período puede representarse de forma incorrecta.
+
+00:00:21.667 --> 00:00:27.667
+Aumentar el intervalo temporal observado puede reducir el detalle disponible según el instrumento.
+
+00:00:27.667 --> 00:00:34.000
+El entrenador dibuja un modelo ideal, no reproduce la adquisición completa de un osciloscopio real.
+

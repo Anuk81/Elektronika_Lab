@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:14.000
+Un voltímetro real tiene impedancia finita. Al conectarlo, añade una rama al circuito. El error es más visible en nodos de alta impedancia. Una sonda también añade capacidad, importante para señales rápidas.
+
+00:00:14.000 --> 00:00:20.000
+Un divisor con resistencias muy grandes puede cambiar apreciablemente al conectar un voltímetro.
+
+00:00:20.000 --> 00:00:27.667
+Reducir ambas resistencias conserva la relación ideal y disminuye el efecto relativo del voltímetro, pero aumenta el consumo.
+
+00:00:27.667 --> 00:00:32.000
+Una medida estable no garantiza que el instrumento no esté alterando el nodo.
+

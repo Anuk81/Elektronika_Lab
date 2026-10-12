@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:11.667
+Para tensión, conecta la punta negra a COM y la roja a V/Ω. El voltímetro se conecta entre dos puntos, en paralelo. Selecciona continua para este banco de 5 V.
+
+00:00:11.667 --> 00:00:16.667
+Roja a VIN y negra a GND: esperas +5 V con la fuente activa.
+
+00:00:16.667 --> 00:00:24.000
+Si intercambias las puntas, esperas −5 V. El signo expresa el orden de la diferencia de potencial.
+
+00:00:24.000 --> 00:00:28.000
+Nunca uses la entrada de corriente para medir una tensión en paralelo.
+

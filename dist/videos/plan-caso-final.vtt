@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:16.000
+Un caso completo une síntoma reproducible, esquema funcional, hipótesis, medidas discriminantes y validación. No confundas localizar el efecto con identificar la causa. Justifica por qué cada prueba era útil y qué incertidumbres permanecen.
+
+00:00:16.000 --> 00:00:25.000
+OUT = 0 V en un divisor puede explicarse por resistencia superior abierta o salida en corto. La tensión sola no distingue ambas.
+
+00:00:25.000 --> 00:00:34.333
+Si R1 está abierta, medir continuidad de esa rama sin alimentación ayuda a contrastar la hipótesis; una salida en corto conserva otro patrón.
+
+00:00:34.333 --> 00:00:38.333
+No uses una conclusión más fuerte que la evidencia disponible.
+

@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:10.000
+Un diodo tiene ánodo y cátodo. Su curva corriente-tensión es no lineal. Una caída típica es orientativa y depende de tecnología, corriente y temperatura.
+
+00:00:10.000 --> 00:00:20.000
+En el modelo del curso, un LED rojo cae 2 V. Con 5 V y 1 kΩ: I = (5−2)/1000 = 3 mA.
+
+00:00:20.000 --> 00:00:27.000
+En polarización inversa el modelo no conduce; en un componente real debes respetar su tensión inversa máxima.
+
+00:00:27.000 --> 00:00:33.667
+Una lectura en circuito puede incluir caminos paralelos. No diagnostiques el diodo con una sola lectura.
+

@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:16.000
+Una vía conecta capas según su construcción. Un plano puede pertenecer a una alimentación o referencia. Las etiquetas de red ayudan a relacionar puntos separados, pero debes comprobar la documentación exacta y no asumir que cualquier zona grande es masa.
+
+00:00:16.000 --> 00:00:23.000
+Dos pads con la misma red documentada siguen perteneciendo al mismo nodo aunque el recorrido atraviese una capa interna.
+
+00:00:23.000 --> 00:00:27.667
+Una isla de cobre próxima puede tener otro nombre de red y no estar conectada.
+
+00:00:27.667 --> 00:00:31.000
+La proximidad física no demuestra continuidad.
+

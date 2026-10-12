@@ -1,0 +1,17 @@
+WEBVTT
+
+00:00:00.120 --> 00:00:01.302
+Tiempo por división.
+
+00:00:01.482 --> 00:00:04.735
+Una señal de mil hercios tiene un período de un milisegundo.
+
+00:00:05.412 --> 00:00:08.334
+Con cero coma dos milisegundos por división, las diez
+
+00:00:08.514 --> 00:00:10.433
+divisiones muestran dos períodos.
+
+00:00:11.120 --> 00:00:13.707
+Ajusta la base de tiempos para distinguir cada ciclo.
+

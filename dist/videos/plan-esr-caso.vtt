@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:14.000
+Un condensador puede fallar por capacidad, ESR, fuga o corto. La apariencia y una única lectura no bastan. Relaciona el parámetro alterado con el síntoma, como mayor rizado o calentamiento bajo condiciones concretas.
+
+00:00:14.000 --> 00:00:18.000
+Una capacidad próxima al nominal no descarta ESR elevada.
+
+00:00:18.000 --> 00:00:23.333
+Un condensador en paralelo con otros puede mostrar una lectura influida por toda la red.
+
+00:00:23.333 --> 00:00:29.333
+No desuelde ni descargues componentes de potencia sin procedimiento y verificación de seguridad.
+

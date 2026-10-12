@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:11.333
+Compara siempre con el circuito sano. En un modelo ideal de divisor sin carga, una apertura de R1, una apertura de R2 y una salida en corto producen firmas diferentes.
+
+00:00:11.333 --> 00:00:22.667
+Con VIN = 5 V y R1 = R2: sano 2,5 V; R1 abierta produce OUT cerca de 0 V; R2 abierta lleva OUT cerca de 5 V.
+
+00:00:22.667 --> 00:00:32.667
+OUT en corto también produce 0 V. Para separarlo de R1 abierta necesitas otra prueba, por ejemplo resistencia de OUT a GND sin alimentación.
+
+00:00:32.667 --> 00:00:38.667
+El voltímetro real carga el circuito y hay tolerancias; los resultados son aproximados.
+

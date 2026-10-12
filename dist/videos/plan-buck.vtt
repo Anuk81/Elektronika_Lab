@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:11.333
+Un regulador lineal disipa la diferencia de tensión multiplicada por la corriente. Un convertidor conmutado intercambia energía mediante interruptores y elementos de almacenamiento.
+
+00:00:11.333 --> 00:00:20.667
+Un lineal de 5 V a 3,3 V con 0,1 A disipa aproximadamente 0,17 W, sin contar su consumo interno.
+
+00:00:20.667 --> 00:00:29.000
+Una bobina próxima a un integrado puede sugerir un convertidor, pero confirma VIN, SW y salida en la documentación.
+
+00:00:29.000 --> 00:00:34.333
+La conmutación vista en SW no es la misma forma de onda que la salida filtrada.
+

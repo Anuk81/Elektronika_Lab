@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:13.000
+Una predicción real suele ser un intervalo. Distingue tolerancia del componente, exactitud del instrumento, resolución de pantalla y repetibilidad. Muchos decimales no implican mejor exactitud.
+
+00:00:13.000 --> 00:00:23.000
+Una resistencia nominal de 1 kΩ con 5 % puede estar entre 950 y 1050 Ω dentro de su especificación inicial.
+
+00:00:23.000 --> 00:00:30.333
+Un divisor con resistencias nominalmente iguales no produce exactamente media tensión si sus valores reales difieren.
+
+00:00:30.333 --> 00:00:35.000
+No declares avería por una diferencia pequeña sin valorar el margen esperado.
+

@@ -1,0 +1,17 @@
+WEBVTT
+
+00:00:00.120 --> 00:00:02.044
+Desplazamiento y pasa altos.
+
+00:00:02.224 --> 00:00:06.192
+Genera un seno de dos voltios pico a pico con dos voltios de desplazamiento.
+
+00:00:06.870 --> 00:00:09.102
+La entrada oscila entre uno y tres voltios.
+
+00:00:09.787 --> 00:00:13.382
+En régimen periódico, el filtro pasa altos elimina la componente
+
+00:00:13.562 --> 00:00:15.668
+continua y centra la salida en cero.
+

@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:15.333
+La atenuación de la sonda y el ajuste del canal deben coincidir. Una sonda pasiva compensable se ajusta con una señal de calibración apropiada. La masa de un osciloscopio de banco suele estar unida a tierra: no la conectes a un punto desconocido.
+
+00:00:15.333 --> 00:00:21.667
+Sonda ×10 con canal configurado ×1 puede mostrar una amplitud diez veces menor que la real.
+
+00:00:21.667 --> 00:00:27.333
+Una compensación inadecuada deforma la respuesta a una cuadrada aunque el circuito esté bien.
+
+00:00:27.333 --> 00:00:32.000
+El banco virtual no reproduce todas las limitaciones de una sonda física.
+

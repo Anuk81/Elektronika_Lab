@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:11.333
+k significa mil; m significa milésima y µ, millonésima. Convierte a unidades compatibles antes de operar. En una resistencia óhmica, V = I × R.
+
+00:00:11.333 --> 00:00:24.000
+2,2 kΩ = 2200 Ω. Con 4,4 V: I = 4,4/2200 = 0,002 A = 2 mA.
+
+00:00:24.000 --> 00:00:34.667
+470 Ω con 10 mA produce 4,7 V de caída. Multiplicar por 10 sin convertir mA daría un error de mil veces.
+
+00:00:34.667 --> 00:00:41.667
+Comprueba el orden de magnitud: una resistencia de kiloohmios a pocos voltios suele conducir miliamperios.
+

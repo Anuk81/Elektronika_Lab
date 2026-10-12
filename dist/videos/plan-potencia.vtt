@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:13.333
+La potencia disipada en una resistencia es P = V × I = I²R. La tolerancia describe el intervalo del valor nominal. Debes comprobar también tensión máxima, temperatura y condiciones de montaje.
+
+00:00:13.333 --> 00:00:21.000
+Una resistencia de 1 kΩ con 5 V disipa 25 mW. Su corriente es 5 mA.
+
+00:00:21.000 --> 00:00:29.667
+Una resistencia de 100 Ω a 10 V disipa 1 W: una pieza de 0,25 W no es adecuada para ese caso.
+
+00:00:29.667 --> 00:00:35.000
+Una pieza que encaja físicamente puede tener especificaciones insuficientes.
+

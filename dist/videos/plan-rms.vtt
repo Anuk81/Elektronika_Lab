@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:16.333
+El valor medio describe la componente continua. El eficaz relaciona una señal con su efecto cuadrático, como calentamiento resistivo. Pico a pico es máximo menos mínimo. Un multímetro en AC suele excluir la continua y su ancho de banda es limitado.
+
+00:00:16.333 --> 00:00:25.000
+Una senoide de 2 Vpp centrada en 0 V tiene 1 V pico y aproximadamente 0,707 V RMS.
+
+00:00:25.000 --> 00:00:33.667
+Con offset de 2 V conserva 2 Vpp y 0,707 V RMS de alterna, pero su media es 2 V.
+
+00:00:33.667 --> 00:00:38.000
+No confundas RMS de alterna con RMS total cuando hay offset.
+

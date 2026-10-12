@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:10.667
+Empieza con el simulador de 5 V. Distingue una fuente, una carga y un camino de retorno. Primero observa; después formula una predicción y solo entonces mide.
+
+00:00:10.667 --> 00:00:18.333
+En un LED con resistencia, la fuente aporta energía, la resistencia limita corriente y el LED transforma parte en luz.
+
+00:00:18.333 --> 00:00:23.667
+Si el retorno está abierto, puede haber tensión en la entrada aunque el LED no se ilumine.
+
+00:00:23.667 --> 00:00:32.000
+Un aparato desenchufado puede conservar energía. Las primeras prácticas reales deben ser de baja tensión y estar supervisadas.
+

@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:16.333
+Una alimentación puede tener valor medio correcto y variación excesiva. El multímetro DC ayuda con el nivel; el osciloscopio permite observar amplitud, frecuencia y transitorios. La conexión y longitud de masa afectan a una medida real de ruido.
+
+00:00:16.333 --> 00:00:26.667
+Una alimentación modelada como 5 V más 0,2 Vpp de seno tiene media de 5 V y oscilación entre 4,9 y 5,1 V.
+
+00:00:26.667 --> 00:00:31.333
+Dos alimentaciones con la misma media pueden tener rizados muy diferentes.
+
+00:00:31.333 --> 00:00:37.000
+No interpretes ruido captado por la sonda como si necesariamente procediera del circuito.
+

@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:15.000
+En un nodo, la suma algebraica de corrientes es cero. En un lazo, la suma algebraica de tensiones es cero. Estas relaciones permiten comprobar si tu interpretación respeta las conexiones. Fija sentidos y signos antes de calcular.
+
+00:00:15.000 --> 00:00:22.667
+Con fuente de 6 V y dos resistencias iguales, cada una cae 3 V: +6−3−3 = 0.
+
+00:00:22.667 --> 00:00:31.000
+Si una corriente se divide en 2 mA y 3 mA, la rama entrante conduce 5 mA en régimen estacionario.
+
+00:00:31.000 --> 00:00:35.667
+Una polaridad de medida invertida cambia el signo, no invalida la ley.
+

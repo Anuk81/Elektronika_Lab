@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:14.667
+PWM modifica la fracción de tiempo en cada nivel. El valor medio de una señal ideal entre cero y V es D·V. La carga y su dinámica determinan cómo responde; no equivale siempre a una tensión continua idéntica.
+
+00:00:14.667 --> 00:00:21.667
+Una señal ideal de 0 a 5 V con 50 % de ciclo útil tiene media de 2,5 V.
+
+00:00:21.667 --> 00:00:28.000
+El multímetro puede indicar un promedio mientras el osciloscopio revela los niveles y tiempos reales.
+
+00:00:28.000 --> 00:00:33.000
+El banco usa cuadrada simétrica; no simula cualquier ciclo útil variable.
+

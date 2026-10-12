@@ -1,0 +1,9 @@
+// Installation is offered by the browser, never claimed from a manifest alone.
+export function mountInstall(){
+ const button=document.createElement('button');button.id='installApp';button.textContent='Instalar app';document.querySelector('header').append(button);
+ let prompt=null;const standalone=()=>window.matchMedia?.('(display-mode: standalone)').matches||navigator.standalone;
+ const update=()=>{button.textContent=standalone()?'App instalada':'Instalar app';};update();
+ window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();prompt=e;update();});window.addEventListener('appinstalled',()=>{prompt=null;update();});
+ button.onclick=async()=>{if(prompt){const request=prompt;prompt=null;await request.prompt();await request.userChoice;update();return;}
+ const d=document.createElement('dialog');d.className='installDialog';d.innerHTML=`<button aria-label="Cerrar">×</button><span class="studioKicker">CIRCUITLAB · TU BANCO DE ELECTRÓNICA</span><h2>La app, en tu dispositivo.</h2><p>Abre CircuitLab en tu navegador habitual y entra con tu cuenta autorizada.</p><ol><li><b>Android o PC:</b> en el menú del navegador busca «Instalar aplicación» o «Añadir a pantalla de inicio».</li><li><b>iPhone o iPad:</b> abre el enlace en Safari, pulsa Compartir y «Añadir a pantalla de inicio».</li></ol><p>Si tu navegador no ofrece la instalación, puedes usar todas las funciones desde la web. La disponibilidad depende del navegador y del acceso privado al sitio.</p><p>Esta versión necesita conexión. Tus notas y encuadres se guardan en este navegador; no se sincronizan automáticamente entre dispositivos.</p><a href="/" target="_blank" rel="noopener">Abrir CircuitLab en una pestaña ↗</a>`;document.body.append(d);d.querySelector('button').onclick=()=>d.close();d.addEventListener('close',()=>d.remove(),{once:true});d.showModal();};
+}

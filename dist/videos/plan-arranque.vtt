@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:10.000
+El arranque exige condiciones coordinadas. Antes de sospechar software, confirma alimentación, reset y reloj con documentación y medidas adecuadas.
+
+00:00:10.000 --> 00:00:16.333
+Una CPU alimentada con reset permanentemente activo no ejecutará normalmente su secuencia de arranque.
+
+00:00:16.333 --> 00:00:23.333
+Un nivel alto en una línea no demuestra tráfico; necesitas observar cambios en el tiempo y conocer el protocolo.
+
+00:00:23.333 --> 00:00:29.667
+No conectes un generador a una línea digital activa sin estudiar niveles y conflictos entre salidas.
+

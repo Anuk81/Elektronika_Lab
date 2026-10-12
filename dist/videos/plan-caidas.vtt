@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:10.000
+Medir respecto a GND ubica potenciales. Medir entre los extremos de un elemento obtiene su caída. En un lazo, las subidas y caídas deben ser coherentes.
+
+00:00:10.000 --> 00:00:19.333
+En un divisor de 5 V con resistencias iguales, cada resistencia cae 2,5 V y OUT está a 2,5 V respecto a GND.
+
+00:00:19.333 --> 00:00:27.667
+Si R1 se abre y R2 sigue conectada, OUT queda cerca de GND; casi toda la tensión aparece entre extremos de la apertura.
+
+00:00:27.667 --> 00:00:34.333
+Una caída de cero puede significar un conductor sano o ausencia de corriente. Necesitas contexto.
+

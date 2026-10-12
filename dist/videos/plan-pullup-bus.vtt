@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:14.667
+Una salida de drenador o colector abierto puede llevar una línea a bajo y liberarla para que el pull-up la eleve. La capacidad de la línea y la resistencia influyen en el tiempo de subida. No conectes entre sí salidas push-pull sin analizar el diseño.
+
+00:00:14.667 --> 00:00:20.333
+Un pull-up más grande reduce corriente al nivel bajo, pero puede hacer más lenta la subida.
+
+00:00:20.333 --> 00:00:26.667
+Una línea fija en bajo puede deberse a un dispositivo activo, un corto o una condición de protocolo.
+
+00:00:26.667 --> 00:00:30.333
+Una tensión alta no prueba que haya comunicación válida.
+

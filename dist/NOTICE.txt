@@ -1,0 +1,22 @@
+CircuitLab 3D. Hardware models derived from SparkFun Electronics open hardware.
+MOSFET_Power_Control_Kit: CC BY-SA 4.0.
+Logic_Level_Bidirectional: CC BY-SA 3.0.
+Modifications: Eagle data conversion, 3D representations, educational measurements and user interface.
+Original design sources and commit identifiers are in data/boards.json.
+Three.js r170: MIT, license in vendor/LICENSE.three.txt.
+
+Ardumoto-Motor_Driver_Shield: CC BY-SA 4.0. Derived CAD geometry and functional-block teaching annotations.
+Divider, RC and LED practice boards: original CircuitLab educational designs.
+A64-OLinuXino revision H: CAD-derived model, Olimex Ltd, CC BY-SA 3.0 US. Source KiCad file retained in source-designs. Board-model modifications: coordinate conversion, approximate package bodies, teaching overlays and functional classification. Internal copper traces are imported; filled plane geometry is not reconstructed.
+TV, washing-machine, smartphone and tablet models are original representative teaching layouts, not device-specific replicas. Architecture reference links are embedded in each model. iPhone and iPad are Apple trademarks; no Apple PCB netlist or pinout is claimed.
+
+2026-10-12: added vector viewing exports of retained SparkFun Eagle schematic symbols and nets. SVG exports omit CAD frames and are not a substitute for original CAD verification. Source Eagle/KiCad files are included under reference/ with the licenses identified above. External PINE64 and ST documents are linked to their publishers, not copied or represented as imported 3D netlists.
+
+v21: Additional original Eagle boards by SparkFun Electronics:
+- I2S Audio Breakout, commit 4b6487e40ee022b4924a7f498bb211c3212f24e1
+  https://github.com/sparkfun/I2S_Audio_Breakout
+- LiPo Charger Basic microUSB, commit 73710c1269a31963b9878e43a2877c6df5e5454a
+  https://github.com/sparkfun/Lipo_Charger_Basic-microUSB
+Both hardware designs and derived board JSON / schematic SVG exports are CC BY-SA 4.0:
+https://creativecommons.org/licenses/by-sa/4.0/
+Changes: Eagle geometry converted to JSON, approximate component housings, educational functional grouping and highlighting. Original .brd/.sch files retained under reference/. These are connectivity inspection models, not full electrical simulations.

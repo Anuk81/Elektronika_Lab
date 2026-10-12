@@ -1,0 +1,17 @@
+WEBVTT
+
+00:00:00.120 --> 00:00:00.866
+El generador.
+
+00:00:01.046 --> 00:00:05.090
+Empieza con una onda senoidal de mil hercios, dos voltios pico a pico
+
+00:00:05.745 --> 00:00:07.360
+y cero voltios de desplazamiento.
+
+00:00:08.037 --> 00:00:10.514
+La señal oscila entre menos uno y más uno.
+
+00:00:11.203 --> 00:00:14.800
+La salida del generador y el canal uno comparten el punto de entrada.
+

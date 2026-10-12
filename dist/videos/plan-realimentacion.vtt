@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:15.000
+La realimentación compara parte de la salida con una referencia o entrada. En un operacional lineal con realimentación negativa, las entradas pueden quedar a tensiones próximas, pero eso requiere alimentación, rango común y salida dentro de límites.
+
+00:00:15.000 --> 00:00:23.000
+En un no inversor ideal, ganancia = 1 + Rf/Rg. Con resistencias iguales, la ganancia es 2.
+
+00:00:23.000 --> 00:00:30.000
+Si la salida satura contra un raíl, ya no puedes imponer que ambas entradas tengan exactamente la misma tensión.
+
+00:00:30.000 --> 00:00:34.000
+La realimentación no garantiza estabilidad de cualquier montaje.
+

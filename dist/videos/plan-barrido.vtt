@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:15.667
+Mantén constante la amplitud de entrada, cambia la frecuencia y mide la relación salida/entrada. Usa ambas señales simultáneamente. Registra también fase cuando sea relevante. El corte se define respecto a la ganancia de banda pasante.
+
+00:00:15.667 --> 00:00:23.333
+En un RC paso bajo ideal, a fc la ganancia es 0,707 y la fase −45 grados.
+
+00:00:23.333 --> 00:00:29.000
+Una amplitud de entrada que cambia durante el barrido falsea la curva si solo anotas la salida.
+
+00:00:29.000 --> 00:00:34.000
+El valor de corte no significa que desaparezcan las frecuencias superiores.
+

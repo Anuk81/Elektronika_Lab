@@ -1,0 +1,15 @@
+{
+  "name": "elektronika-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Atlas de electr\u00f3nica y casos de aprendizaje guiado",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/check.mjs",
+    "test": "node test-atlas-core.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

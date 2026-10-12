@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:10.667
+Primero identifica alimentación y referencia; después entradas, salidas y componentes. Una etiqueta de red une puntos del mismo nombre aunque no haya una línea entre ellos.
+
+00:00:10.667 --> 00:00:19.000
+VIN → R1 → OUT → R2 → GND describe un divisor. OUT es la unión, no el cuerpo de una resistencia.
+
+00:00:19.000 --> 00:00:25.667
+Una línea que cruza otra puede no estar conectada. Confirma nodos, etiquetas y convenciones del esquema.
+
+00:00:25.667 --> 00:00:30.667
+No sigas una pista atravesando una resistencia como si perteneciera al mismo nodo.
+

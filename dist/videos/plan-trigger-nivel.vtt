@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:12.333
+El disparo alinea capturas cuando una señal cumple una condición. Elige fuente, pendiente y nivel que la señal cruce. Cambiar la base de tiempos no sustituye una condición de disparo válida.
+
+00:00:12.333 --> 00:00:18.667
+En una senoide centrada en 2 V, un disparo ascendente cerca de 2 V ofrece un cruce repetible.
+
+00:00:18.667 --> 00:00:23.333
+Un nivel por encima del máximo de la señal no tendrá cruces en modo normal.
+
+00:00:23.333 --> 00:00:28.000
+Una pantalla detenida no prueba que el circuito haya dejado de funcionar.
+

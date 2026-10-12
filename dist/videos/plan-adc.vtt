@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:15.667
+Un ADC convierte una tensión respecto a una referencia en un código dentro de un rango. La referencia, el acondicionamiento y los tiempos de adquisición importan. Un código digital incorrecto no implica automáticamente un microcontrolador averiado.
+
+00:00:15.667 --> 00:00:25.333
+En un ejemplo ideal de 10 bits hay 1024 niveles. Una referencia de 5 V da un paso aproximado de 4,88 mV.
+
+00:00:25.333 --> 00:00:32.000
+Cambiar la referencia modifica la relación entre tensión y código aunque la tensión del sensor permanezca igual.
+
+00:00:32.000 --> 00:00:37.000
+La convención de escala y límites exactos se comprueba en la ficha del ADC.
+

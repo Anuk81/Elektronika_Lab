@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:13.667
+Un número aislado no describe una medida. Debes identificar los dos puntos, la función del instrumento, el estado de la fuente, la carga y las unidades. Distingue el resultado observado de la explicación que propones.
+
+00:00:13.667 --> 00:00:22.333
+OUT respecto a GND = 2,50 V, fuente de 5 V activa, divisor de dos resistencias iguales sin carga.
+
+00:00:22.333 --> 00:00:29.000
+Si usas IN como referencia en vez de GND, el mismo OUT puede dar −2,50 V.
+
+00:00:29.000 --> 00:00:34.667
+La referencia elegida cambia el valor expresado; no cambia físicamente el circuito.
+

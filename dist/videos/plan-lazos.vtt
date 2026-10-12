@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:12.667
+Un lazo cerrado permite una corriente si existe una fuente y una carga. Una apertura interrumpe el camino. Un cortocircuito crea un camino de resistencia muy baja que puede provocar corriente excesiva.
+
+00:00:12.667 --> 00:00:19.000
+Si se abre el cable de retorno del LED, el lazo queda interrumpido y la corriente estacionaria es cero.
+
+00:00:19.000 --> 00:00:25.333
+Puentear el LED no es igual que puentear la fuente: la resistencia sigue limitando en el primer caso.
+
+00:00:25.333 --> 00:00:31.000
+No pruebes un cortocircuito físico como experimento. Aquí lo analizamos en un modelo.
+

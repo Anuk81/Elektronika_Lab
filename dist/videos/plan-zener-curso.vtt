@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:18.000
+Un Zener trabaja en ruptura inversa dentro de un intervalo especificado. Una resistencia limita la corriente disponible. La carga toma parte de esa corriente; solo la restante atraviesa el Zener. Si la corriente restante es insuficiente, la tensión deja de estar bien regulada.
+
+00:00:18.000 --> 00:00:26.333
+Con 9 V, Zener ideal de 5,1 V y 1 kΩ: la corriente disponible es 3,9 mA sin carga.
+
+00:00:26.333 --> 00:00:34.667
+Si la carga consume 2 mA, quedan 1,9 mA para el Zener. Debes verificar si bastan según su ficha.
+
+00:00:34.667 --> 00:00:39.333
+No extrapoles una tensión nominal a cualquier corriente ni ignores la potencia.
+

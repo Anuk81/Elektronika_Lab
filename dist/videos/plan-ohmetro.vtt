@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:12.000
+La continuidad detecta un camino de baja resistencia según el umbral del instrumento. Para medir Ω o continuidad, retira la alimentación y verifica que no queda tensión ni energía almacenada.
+
+00:00:12.000 --> 00:00:19.333
+Un cable directo ideal entre dos pads da una resistencia cercana a cero, incluyendo las puntas en una medida real.
+
+00:00:19.333 --> 00:00:27.333
+Una resistencia en paralelo con otra se mide como su equivalente: 1 kΩ en paralelo con 1 kΩ da 500 Ω.
+
+00:00:27.333 --> 00:00:34.667
+Pitido no significa necesariamente cortocircuito defectuoso: puede tratarse de una bobina o un plano común.
+

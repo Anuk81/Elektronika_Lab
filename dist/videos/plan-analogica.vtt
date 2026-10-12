@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:10.000
+Una etapa analógica puede amplificar, filtrar o adaptar impedancias. Sigue entrada y salida con una señal conocida, manteniendo referencia y escalas.
+
+00:00:10.000 --> 00:00:20.000
+En un amplificador no inversor ideal con ganancia 2, una entrada de 0,1 V pico produce 0,2 V pico, mientras opere en su zona lineal.
+
+00:00:20.000 --> 00:00:27.000
+Si la salida alcanza sus límites de alimentación puede recortarse: no basta con aplicar la ganancia ideal.
+
+00:00:27.000 --> 00:00:33.333
+Una señal deformada puede entrar ya deformada. Compara ambos lados antes de localizar el fallo.
+

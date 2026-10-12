@@ -1,0 +1,17 @@
+WEBVTT
+
+00:00:00.120 --> 00:00:01.229
+Carga y descarga.
+
+00:00:01.409 --> 00:00:04.509
+Usa mil ohmios y un microfaradio en el filtro pasa bajos.
+
+00:00:05.162 --> 00:00:07.265
+Genera una onda cuadrada de cien hercios.
+
+00:00:07.953 --> 00:00:09.894
+La constante de tiempo es un milisegundo.
+
+00:00:10.578 --> 00:00:14.333
+La tensión del condensador evoluciona de forma gradual hacia cada nivel.
+

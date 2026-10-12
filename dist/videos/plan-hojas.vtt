@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:12.667
+Sigue las referencias entre hojas y los nombres de señales. Un conector cambia la ubicación física pero no sustituye la información del pinout. Distingue nombre de red, número de pin y número de componente.
+
+00:00:12.667 --> 00:00:21.667
+J1.3 puede llevar ENABLE mientras J2.3 lleva GND: el número 3 solo identifica un pin dentro de cada conector.
+
+00:00:21.667 --> 00:00:29.000
+Una etiqueta repetida puede conectar hojas según las reglas del documento; comprueba su alcance global o local.
+
+00:00:29.000 --> 00:00:33.333
+No transportes un pinout entre revisiones de equipo sin confirmación.
+

@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:15.667
+Distingue tres regímenes antes de usar una fórmula. En corte la corriente es muy pequeña; en activa la base controla la corriente de colector; en saturación la alimentación y la carga limitan la corriente y la ganancia de activa deja de ser una ley aplicable.
+
+00:00:15.667 --> 00:00:22.000
+Si β ideal = 100 e IB = 10 µA, la estimación en activa es 1 mA.
+
+00:00:22.000 --> 00:00:30.667
+Si la carga no puede conducir más de 2 mA, aumentar IB a 100 µA no obliga al circuito a conducir 10 mA.
+
+00:00:30.667 --> 00:00:35.000
+El pinout depende de la referencia; no lo deduzcas de la carcasa.
+

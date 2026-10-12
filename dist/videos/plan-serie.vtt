@@ -1,0 +1,14 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:11.000
+Dos elementos están en serie si su nodo común no tiene otra rama de corriente. Están en paralelo cuando comparten ambos nodos. La posición en el dibujo no define la conexión.
+
+00:00:11.000 --> 00:00:18.000
+Dos resistencias de 1 kΩ en serie suman 2 kΩ. A 4 V circulan 2 mA.
+
+00:00:18.000 --> 00:00:26.333
+Dos resistencias de 1 kΩ en paralelo equivalen a 500 Ω. A 4 V, cada rama conduce 4 mA.
+
+00:00:26.333 --> 00:00:31.667
+No confundas componentes alineados visualmente con componentes conectados en serie.
+
