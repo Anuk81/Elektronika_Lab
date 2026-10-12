@@ -53,7 +53,7 @@ for b in boards:
  for e in b['elements']:
   s=source.get(e['name']);env=s and s['envelope']
   if env and env[2]>env[0] and env[3]>env[1]:e['cadEnvelope']=env
-  p=e['package'].upper();e['assembly']='not-fitted' if e.get('value','').startswith('NA(') else 'footprint-only' if any(t in p for t in ['FIDUCIAL','TESTPAD','MOUNTING_HOLE','JUMPER','SMT-JUMPER']) or p=='TP_SMD' or p.startswith('SJ') else 'fitted'
+  p=e['package'].upper();e['assembly']='not-fitted' if bool(re.match(r'^NA(?:\(|$)',e.get('value',''))) else 'footprint-only' if any(t in p for t in ['FIDUCIAL','TESTPAD','MOUNTING_HOLE','JUMPER','SMT-JUMPER','BT_ANTENNA']) or p=='TP_SMD' or p.startswith('SJ') else 'fitted'
  if holes:b['holes']=list({tuple(round(v,4) for v in h) for h in b.get('holes',[])+holes})
  b['cadAudit']={'source':path.name,'sourceFootprints':len(source),'importedFootprints':len(existing),'fitted':sum(e['assembly']=='fitted' for e in b['elements']),'bottomFitted':sum(e['assembly']=='fitted' and e.get('mirror',False) for e in b['elements']),'notFitted':sum(e['assembly']=='not-fitted' for e in b['elements']),'footprintOnly':sum(e['assembly']=='footprint-only' for e in b['elements']),'missingElectrical':missing,'omittedArtwork':[ref for ref,v in source.items() if not v['electrical'] and ref not in existing]}
  report[b['id']]=b['cadAudit']
