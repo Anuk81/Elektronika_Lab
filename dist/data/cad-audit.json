@@ -1,0 +1,125 @@
+{
+  "mosfet": {
+    "source": "SparkFun_MOSFET_Power_Control_Kit.brd",
+    "sourceFootprints": 11,
+    "importedFootprints": 8,
+    "fitted": 8,
+    "bottomFitted": 0,
+    "notFitted": 0,
+    "footprintOnly": 0,
+    "missingElectrical": [],
+    "omittedArtwork": [
+      "FRAME1",
+      "LOGO1",
+      "LOGO2"
+    ]
+  },
+  "logic": {
+    "source": "Logic_Level_Bidirectional.brd",
+    "sourceFootprints": 18,
+    "importedFootprints": 16,
+    "fitted": 14,
+    "bottomFitted": 2,
+    "notFitted": 0,
+    "footprintOnly": 2,
+    "missingElectrical": [],
+    "omittedArtwork": [
+      "LOGO1",
+      "LOGO2"
+    ]
+  },
+  "ardumoto": {
+    "source": "SparkFun_Ardumoto.brd",
+    "sourceFootprints": 66,
+    "importedFootprints": 59,
+    "fitted": 48,
+    "bottomFitted": 1,
+    "notFitted": 0,
+    "footprintOnly": 11,
+    "missingElectrical": [],
+    "omittedArtwork": [
+      "U$1",
+      "H1",
+      "H2",
+      "FRAME1",
+      "LOGO1",
+      "LOGO2",
+      "FRAME2"
+    ]
+  },
+  "computer": {
+    "source": "A64-OlinuXino_Rev_H.kicad_pcb",
+    "sourceFootprints": 459,
+    "importedFootprints": 451,
+    "fitted": 349,
+    "bottomFitted": 188,
+    "notFitted": 65,
+    "footprintOnly": 37,
+    "missingElectrical": [],
+    "omittedArtwork": [
+      "Sign_CE",
+      "Sign-Antistatic",
+      "Sign-RoHS",
+      "Logo-OLimeX_Big",
+      "Logo-OSHW",
+      "Sign-PbFree",
+      "Sign-RecycleBin",
+      "Mounting_hole4"
+    ]
+  },
+  "audio-i2s": {
+    "source": "SparkFun_I2S_Audio_Breakout.brd",
+    "sourceFootprints": 40,
+    "importedFootprints": 13,
+    "fitted": 7,
+    "bottomFitted": 0,
+    "notFitted": 0,
+    "footprintOnly": 6,
+    "missingElectrical": [],
+    "omittedArtwork": [
+      "H1",
+      "H2",
+      "FRAME1",
+      "LOGO1",
+      "LOGO2",
+      "U$15",
+      "U$1",
+      "U$2",
+      "U$3",
+      "U$4",
+      "U$5",
+      "U$6",
+      "U$7",
+      "U$8",
+      "U$9",
+      "U$10",
+      "U$22",
+      "U$16",
+      "U$19",
+      "U$17",
+      "U$18",
+      "U$23",
+      "U$11",
+      "U$12",
+      "U$13",
+      "U$14",
+      "U$20"
+    ]
+  },
+  "lipo-charger": {
+    "source": "SparkFun_Lipo_Charger_Basic-microUSB.brd",
+    "sourceFootprints": 16,
+    "importedFootprints": 12,
+    "fitted": 10,
+    "bottomFitted": 1,
+    "notFitted": 0,
+    "footprintOnly": 2,
+    "missingElectrical": [],
+    "omittedArtwork": [
+      "JP2",
+      "FRAME1",
+      "LOGO1",
+      "LOGO2"
+    ]
+  }
+}
