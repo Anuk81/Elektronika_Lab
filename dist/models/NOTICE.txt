@@ -3,3 +3,5 @@ Board project: Olimex Ltd, CC BY-SA 3.0 US.
 KiCad StepUp VRML library components: copyright 2018 KiCad StepUp, CC BY-SA 4.0 with electronic-design exception; see https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md.
 Modified: STEP tessellation using OpenCascade via occt-import-js 0.0.23, VRML triangulation, millimetre conversion, compressed indexed geometry. STEP chordal tolerance 0.025 mm.
 Models retain original placement and scaling. Some manufacturer project assignments use generic substituted packages, notably scaled BGAs; this is not a physically certified exact replica. Source URLs and SHA256 hashes are recorded per file in manifest.json.
+
+Overrides: U1/U2/U3 and Q3/Q4 now use dimensioned reconstructions instead of the generic scaled source models. See package-dimensions.json for sources and limits. BGA contacts come from the actual copper terminal coordinates (396/96/96), excluding solder-paste openings and fiducials. The remaining source models and procedural components have not all been independently dimensionally verified.
