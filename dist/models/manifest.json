@@ -1,0 +1,338 @@
+{
+  "Audio_Jack-3.5mm---CUI_SJ1-3515-SMT-TR.step": {
+    "asset": "part-00.json.gz",
+    "meshes": 1,
+    "triangles": 6842,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/Audio_Jack-3.5mm---CUI_SJ1-3515-SMT-TR.step",
+    "sourceSha256": "5aea9dd24d23206fd09a79aae606b4d95ed495ba6a51f48a4e4cd6e3ebc31fa0"
+  },
+  "BGA289_14X14.STEP": {
+    "asset": "part-01.json.gz",
+    "meshes": 291,
+    "triangles": 157016,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/BGA289_14X14.STEP",
+    "sourceSha256": "6a9fe86132371b01a804eb62b81fa214d524189298131297933ec6adb7840fc6"
+  },
+  "BL-R8723BT1module.STEP": {
+    "asset": "part-02.json.gz",
+    "meshes": 17,
+    "triangles": 3948,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/BL-R8723BT1module.STEP",
+    "sourceSha256": "d7c43f99c4fa44c1084a8e63a909a8b604114e5e1acb2c49fe6aa5712ffed4c6"
+  },
+  "C_0402_1005Metric.wrl": {
+    "asset": "part-03.json.gz",
+    "meshes": 28,
+    "triangles": 380,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/C_0402_1005Metric.wrl",
+    "sourceSha256": "edd1de5a07b3b6d903024aab93512280b5ae5ecc564adc079876b8d80168afc0"
+  },
+  "C_0603_1608Metric.wrl": {
+    "asset": "part-04.json.gz",
+    "meshes": 28,
+    "triangles": 380,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/C_0603_1608Metric.wrl",
+    "sourceSha256": "d8b095ab562bf44b3a6bcb4059c87775c51b7c5672480f3b2fdc796f165c8505"
+  },
+  "C_0805_2012Metric.wrl": {
+    "asset": "part-05.json.gz",
+    "meshes": 28,
+    "triangles": 380,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/C_0805_2012Metric.wrl",
+    "sourceSha256": "840481a5fd6d54a48d7a634404a9848de662816075c4569d2484b192c3fb2801"
+  },
+  "C_1206_3216Metric.wrl": {
+    "asset": "part-06.json.gz",
+    "meshes": 28,
+    "triangles": 380,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/C_1206_3216Metric.wrl",
+    "sourceSha256": "c8ce7903eeaceb189976a04f0f67070ad0fe21a7bbcd6605fe60786704368afd"
+  },
+  "Connector_1Port_RJ45_Magjack_10-100Base-T_AutoMDIX_Molex-0934635206_DigiKey-WM17614-ND.stp": {
+    "asset": "part-07.json.gz",
+    "meshes": 1,
+    "triangles": 6254,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/Connector_1Port_RJ45_Magjack_10-100Base-T_AutoMDIX_Molex-0934635206_DigiKey-WM17614-ND.stp",
+    "sourceSha256": "7be2b09ee121097843dee6dde65ad219641094f9b61a1bf24b50a1ed378bc5fc"
+  },
+  "DFN6(Body-2x2mm_Hight-1mm_Pitch-0,65mm).step": {
+    "asset": "part-08.json.gz",
+    "meshes": 1,
+    "triangles": 1116,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/DFN6%28Body-2x2mm_Hight-1mm_Pitch-0%2C65mm%29.step",
+    "sourceSha256": "08e12e6526708d900070adea486e7d5b3b78beab8b6aac0170381f81b3f3a36a"
+  },
+  "DO-214AA_SMB.step": {
+    "asset": "part-09.json.gz",
+    "meshes": 1,
+    "triangles": 332,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/DO-214AA_SMB.step",
+    "sourceSha256": "2cbb4c1829d2801ae4041f491640f659e997cf1860d78f38277fff4015d861d0"
+  },
+  "DO-214AC_SMA.step": {
+    "asset": "part-10.json.gz",
+    "meshes": 1,
+    "triangles": 324,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/DO-214AC_SMA.step",
+    "sourceSha256": "64ce1d89496924dcdfad5531757c6e1155aca9857a08eb600c246eafc1164dd7"
+  },
+  "FPV-WZA21-20-LF_Molex-527452033.stp": {
+    "asset": "part-11.json.gz",
+    "meshes": 1,
+    "triangles": 5924,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/FPV-WZA21-20-LF_Molex-527452033.stp",
+    "sourceSha256": "67d0556b5e00916b53887d0ceb07b85bca6d3e8777c94aa6ec7bdd805af5510a"
+  },
+  "FPV-WZA21-40-LF_Molex-541044033.stp": {
+    "asset": "part-12.json.gz",
+    "meshes": 1,
+    "triangles": 15458,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/FPV-WZA21-40-LF_Molex-541044033.stp",
+    "sourceSha256": "b8c52f8d72c876ae800734469f514519b932935de334dd98ba4bfd5e5c6c5194"
+  },
+  "HDMI_19POS_SMD_Wurth_Electronic-685119134923.stp": {
+    "asset": "part-13.json.gz",
+    "meshes": 21,
+    "triangles": 18172,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/HDMI_19POS_SMD_Wurth_Electronic-685119134923.stp",
+    "sourceSha256": "12818cf9384037ef36a8527005c9c703613d55d551bc1b7c1dd49e553e2e3605"
+  },
+  "HN1x2-PinHeader_1x02_P2.54mm_Vertical.step": {
+    "asset": "part-14.json.gz",
+    "meshes": 1,
+    "triangles": 148,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/HN1x2-PinHeader_1x02_P2.54mm_Vertical.step",
+    "sourceSha256": "ea4d0799007ebdd3945072bf255d673d2fe87eb05fda85fd8d7993ad9397da41"
+  },
+  "HN1x3-PinHeader_1x03_P2.54mm_Vertical.step": {
+    "asset": "part-15.json.gz",
+    "meshes": 1,
+    "triangles": 220,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/HN1x3-PinHeader_1x03_P2.54mm_Vertical.step",
+    "sourceSha256": "b91b4ac5acf1a0d28a676703db972d17b8f11ef26a85b58d60786a69246b921b"
+  },
+  "HN2x5-PinHeader_2x05_P2.54mm_Vertical.step": {
+    "asset": "part-16.json.gz",
+    "meshes": 1,
+    "triangles": 604,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/HN2x5-PinHeader_2x05_P2.54mm_Vertical.step",
+    "sourceSha256": "cd99322b0ccc253157acbe9c5c672ce9b37dbcd4d59fb001240a93110052cdce"
+  },
+  "JST_B2B-PH-SM4-TB(DW02R).step": {
+    "asset": "part-17.json.gz",
+    "meshes": 1,
+    "triangles": 552,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/JST_B2B-PH-SM4-TB%28DW02R%29.step",
+    "sourceSha256": "427b9a0beed2602dd912cbe2fe0abc70748d585478ee9d63c471d8bde2cff2ae"
+  },
+  "L-CD32_shielded.step": {
+    "asset": "part-18.json.gz",
+    "meshes": 5,
+    "triangles": 23272,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/L-CD32_shielded.step",
+    "sourceSha256": "7954f52b05c50bd9388f60633facf41a3b23b9b08fcd75ce5a2270494c971f6a"
+  },
+  "L-CD43_shielded.STEP": {
+    "asset": "part-19.json.gz",
+    "meshes": 6,
+    "triangles": 6292,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/L-CD43_shielded.STEP",
+    "sourceSha256": "8f94592026707c5386c67642e8b5b1f8d0febb17d26d48ccaa23497288cc96a1"
+  },
+  "L-CD75(YS75)_7.80x7.00x5.50mm.step": {
+    "asset": "part-20.json.gz",
+    "meshes": 3,
+    "triangles": 32755,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/L-CD75%28YS75%29_7.80x7.00x5.50mm.step",
+    "sourceSha256": "022648c29f44dd105a56d19cacefd37900f4e4f90a334fec3793d67e58dd12b0"
+  },
+  "LED_0603_R.wrl": {
+    "asset": "part-21.json.gz",
+    "meshes": 1,
+    "triangles": 1082,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/LED_0603_R.wrl",
+    "sourceSha256": "78a0f06ad4eb0d22f2bb10f234ab873921decd2a04bbfc2c06a59b462296dae4"
+  },
+  "LED_0603_Y.wrl": {
+    "asset": "part-22.json.gz",
+    "meshes": 1,
+    "triangles": 1082,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/LED_0603_Y.wrl",
+    "sourceSha256": "22c96be0787c565868a6cabc1883111cd4594f337d84b9e247c66815673240f8"
+  },
+  "L_0402_1005Metric.wrl": {
+    "asset": "part-23.json.gz",
+    "meshes": 28,
+    "triangles": 380,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/L_0402_1005Metric.wrl",
+    "sourceSha256": "8061c43bff1f61b78ca8d5a3761bfe63826290b5f68d0c64609a65353406f78c"
+  },
+  "L_0805_2012Metric.wrl": {
+    "asset": "part-24.json.gz",
+    "meshes": 28,
+    "triangles": 380,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/L_0805_2012Metric.wrl",
+    "sourceSha256": "3597c1b3958738898394e779a0a2c873ad585a6484366d81ae2c279df56c1531"
+  },
+  "Q32.768kHz_12.5pF_2P_SMD1206---ECS-.327-12.5-34B-C-TR.STEP": {
+    "asset": "part-25.json.gz",
+    "meshes": 3,
+    "triangles": 684,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/Q32.768kHz_12.5pF_2P_SMD1206---ECS-.327-12.5-34B-C-TR.STEP",
+    "sourceSha256": "15af6506982d136d852afddee0e0d483011a9b098efe5ff527b424973be9769f"
+  },
+  "QFN48-0.5.STEP": {
+    "asset": "part-26.json.gz",
+    "meshes": 50,
+    "triangles": 6028,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/QFN48-0.5.STEP",
+    "sourceSha256": "2a05ca16dec7f5436e21f02090cde7b6a6cb58d05fc6a1bb79d2d94b81990527"
+  },
+  "QFN68(8x8mm).step": {
+    "asset": "part-27.json.gz",
+    "meshes": 1,
+    "triangles": 7828,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/QFN68%288x8mm%29.step",
+    "sourceSha256": "585cc5554792dedad2bd007c58ad7525ab7e6a5cddd461939d661f20050fe76a"
+  },
+  "QSG5032.step": {
+    "asset": "part-28.json.gz",
+    "meshes": 1,
+    "triangles": 2664,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/QSG5032.step",
+    "sourceSha256": "c9b32890cd9213fff668327c219f78e34c6f54ad46abc0a72bd0bd9f003b7807"
+  },
+  "R_0402_1005Metric.wrl": {
+    "asset": "part-29.json.gz",
+    "meshes": 26,
+    "triangles": 276,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/R_0402_1005Metric.wrl",
+    "sourceSha256": "ce89655575a3858f28f001c08aed3f4e4a4b85833d9d3366e0902e44e8d0ebd8"
+  },
+  "R_0603_1608Metric.wrl": {
+    "asset": "part-30.json.gz",
+    "meshes": 26,
+    "triangles": 276,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/R_0603_1608Metric.wrl",
+    "sourceSha256": "eadfec9e71c67b1dd3910c72b45d811a06f0ab5397d0609354b10e9a3a4c1fdd"
+  },
+  "R_1206_3216Metric.wrl": {
+    "asset": "part-31.json.gz",
+    "meshes": 26,
+    "triangles": 276,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/R_1206_3216Metric.wrl",
+    "sourceSha256": "fd1e45a3ad518b96159257b98228b98775f69cf56040c56fb9725bf700f4b34b"
+  },
+  "R_Array_Convex_4x0402.wrl": {
+    "asset": "part-32.json.gz",
+    "meshes": 218,
+    "triangles": 2664,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/R_Array_Convex_4x0402.wrl",
+    "sourceSha256": "037ac34fd14da57bd7f96995cacf73c8033f9143da5ca3511c74374d6deace28"
+  },
+  "R_Array_Convex_4x0603.wrl": {
+    "asset": "part-33.json.gz",
+    "meshes": 206,
+    "triangles": 2664,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/R_Array_Convex_4x0603.wrl",
+    "sourceSha256": "7874054f23c954c42d4c02cb23ec19ab1f754e6ffd89bb0e93ee21a0074801aa"
+  },
+  "SO-8_150mil---SN65HVDA1050AQDRQ1.STEP": {
+    "asset": "part-34.json.gz",
+    "meshes": 9,
+    "triangles": 1536,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/SO-8_150mil---SN65HVDA1050AQDRQ1.STEP",
+    "sourceSha256": "025a938e7b12cef370045de3e9971943ad50e25f0827d6266dca33c1b17efe55"
+  },
+  "SO-8_208mil---SOIC8_Wide_5mmx5mm.step": {
+    "asset": "part-35.json.gz",
+    "meshes": 1,
+    "triangles": 3352,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/SO-8_208mil---SOIC8_Wide_5mmx5mm.step",
+    "sourceSha256": "77de16ff1d10016cc3731b7d230ad322c6365bc0dd52ddf7ff94eecbb237d9ef"
+  },
+  "SOD123.step": {
+    "asset": "part-36.json.gz",
+    "meshes": 1,
+    "triangles": 288,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/SOD123.step",
+    "sourceSha256": "edfd0a868d172ad514ec2d2b083cc58b0b9755c92ef44adcf55140fc66ebe9f3"
+  },
+  "SOT-223-2.STEP": {
+    "asset": "part-37.json.gz",
+    "meshes": 5,
+    "triangles": 2628,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/SOT-223-2.STEP",
+    "sourceSha256": "3634b67cba5193c2248c16c001070368344806865763c5452c55b9a074da3158"
+  },
+  "SOT-23-5.step": {
+    "asset": "part-38.json.gz",
+    "meshes": 1,
+    "triangles": 980,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/SOT-23-5.step",
+    "sourceSha256": "fb4d5778c162afde8297378a1413784fa479fdb9f49acb8ab79aa53d12be2d73"
+  },
+  "SOT-23-6.step": {
+    "asset": "part-39.json.gz",
+    "meshes": 1,
+    "triangles": 1300,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/SOT-23-6.step",
+    "sourceSha256": "883442183b6d04cc1e253ef28c59be14ef709a4d034653272fc5a3ee79b44674"
+  },
+  "SOT-23.step": {
+    "asset": "part-40.json.gz",
+    "meshes": 1,
+    "triangles": 596,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/SOT-23.step",
+    "sourceSha256": "fc58593c1101241f0deec3419e333ec09875b0d2550211f77a524ea2df4d72b5"
+  },
+  "TFC-WPAPR-08---112J-TXAR-R_C_1-1.STEP": {
+    "asset": "part-41.json.gz",
+    "meshes": 14,
+    "triangles": 75714,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/TFC-WPAPR-08---112J-TXAR-R_C_1-1.STEP",
+    "sourceSha256": "c047d3f06abf45601260786f5aece38be75e7c07eec1b2632fffb967730ceefe"
+  },
+  "USB-A-S-F-B-VU.stp": {
+    "asset": "part-42.json.gz",
+    "meshes": 3,
+    "triangles": 2976,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/USB-A-S-F-B-VU.stp",
+    "sourceSha256": "6835bfee1c5043b1a7636f97b0cb6002350b4f27bcf86687de7b23b7e55fb956"
+  },
+  "U_FL-R-SMT-1.step": {
+    "asset": "part-43.json.gz",
+    "meshes": 7,
+    "triangles": 11388,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/U_FL-R-SMT-1.step",
+    "sourceSha256": "bff1176f5d45346625c35e1ca0922270989816772896aa48c29a3cc1319704d3"
+  },
+  "bga-81-2.step": {
+    "asset": "part-44.json.gz",
+    "meshes": 1,
+    "triangles": 62428,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/bga-81-2.step",
+    "sourceSha256": "14421fb0176b9cff503eb670abae2dbb2f4ec0c6d8b5491dbdfd7d37aa802cd7"
+  },
+  "it1185.step": {
+    "asset": "part-45.json.gz",
+    "meshes": 4,
+    "triangles": 1584,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/it1185.step",
+    "sourceSha256": "236472ec2c8ec9fc301ae8cd971835c2d1eb1756f6318c2e8416c07bff34b336"
+  },
+  "pj-102ah.stp": {
+    "asset": "part-46.json.gz",
+    "meshes": 1,
+    "triangles": 992,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/pj-102ah.stp",
+    "sourceSha256": "d624e4c2ee1a72c50b68580175151bcc782e6594b0e8bec0ede98beb7edfbcb7"
+  },
+  "usb_micro_4p.stp": {
+    "asset": "part-47.json.gz",
+    "meshes": 8,
+    "triangles": 9096,
+    "source": "https://github.com/OLIMEX/OLINUXINO/blob/a8672538a650d3a1eb23c11fe9ef594229333232/HARDWARE/A64-OLinuXino/1.%20Latest%20hardware%20revision/A64-OLinuXino%20hardware%20revision%20H/3d/usb_micro_4p.stp",
+    "sourceSha256": "fc56c0e9b91d3add959936cb4d096e92b3fc3f6053726a2e313f93b8529a472f"
+  }
+}
