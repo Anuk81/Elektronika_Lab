@@ -3,11 +3,11 @@
   "version": "4.0.0",
   "private": true,
   "type": "module",
-  "description": "Laboratorio guiado de electrónica: aprender, experimentar y diagnosticar",
+  "description": "Laboratorio guiado de electr\u00f3nica: aprender, experimentar y diagnosticar",
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "build": "node scripts/check.mjs",
-    "test": "node test-atlas-core.mjs && node test-full-boot.mjs && node test-physical.mjs && node test-manufacturer.mjs"
+    "test": "node test-atlas-core.mjs && node test-full-boot.mjs && node test-physical.mjs && node test-manufacturer.mjs && node test-solder.mjs"
   },
   "engines": {
     "node": ">=20"

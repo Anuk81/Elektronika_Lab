@@ -10,3 +10,10 @@ for(const [ref,count,w,d,h] of [['U1',396,15,15,1.3],['U2',96,13.3,10,1.1],['U3'
  for(const m of contacts){const v=m.getWorldPosition(new T.Vector3());if(m.userData.part==='ball')assert(pads.some(p=>p.pin===m.userData.pin&&Math.hypot(v.x-p.x,v.y-p.y)<1e-6),ref+' ball alignment');assert(el.mirror?v.z< -1.6:v.z>0,ref+' assembly face');}
 }
 console.log('PASS: A64 396 + DDR 96/96 balls; ABM8 4/4 terminals; dimensioned envelopes; copper alignment; assembly faces.');
+// Viewer root is translated to the board centre and can be rotated: CAD contacts
+// must be transformed once, never interpreted as scene-world coordinates.
+for(const ref of ['U1','U2','U3']){
+ const el=board.elements.find(e=>e.name===ref),g=new T.Group();g.position.set(-145,72,-3);g.rotation.set(.4,-.2,.7);const pads=board.pads.filter(p=>p.element===ref);assert(manufacturerComponent(T,el,g,pads));g.updateMatrixWorld(true);let n=0;
+ g.traverse(m=>{if(m.userData.part!=='ball')return;const p=pads.find(p=>p.pin===m.userData.pin);const expected=new T.Vector3(p.x,p.y,el.name==='U1'?.135:.175).applyMatrix4(g.matrixWorld);assert(m.getWorldPosition(new T.Vector3()).distanceTo(expected)<1e-6,ref+' translated/rotated contact '+p.pin);n++;});assert.equal(n,ref==='U1'?396:96);
+}
+console.log('PASS: contacts remain aligned under the live viewer root translation and rotation.');
