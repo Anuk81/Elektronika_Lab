@@ -7,6 +7,6 @@ assert(loaded>300);console.log(JSON.stringify({loaded,triangles,unusual},null,2)
 for(const [ref,count,w,d,h] of [['U1',396,15,15,1.3],['U2',96,13.3,10,1.1],['U3',96,13.3,10,1.1],['Q3',4,3.2,2.5,.8],['Q4',4,3.2,2.5,.8]]){
  const el=board.elements.find(e=>e.name===ref),pads=board.pads.filter(p=>p.element===ref),g=new T.Group();assert(manufacturerComponent(T,el,g,pads));g.updateMatrixWorld(true);const contacts=[];g.traverse(o=>{if(['ball','terminal'].includes(o.userData.part))contacts.push(o);});assert.equal(contacts.length,count,ref+' physical contacts');
  const bounds=new T.Box3().setFromObject(g),size=bounds.getSize(new T.Vector3());assert(Math.abs(size.x-w)<.001&&Math.abs(size.y-d)<.001&&Math.abs(size.z-h)<.003,ref+' envelope '+size.toArray());
- for(const m of contacts){const v=m.getWorldPosition(new T.Vector3());if(m.userData.part==='ball')assert(pads.some(p=>p.pin===m.userData.pin&&Math.hypot(v.x-p.x,v.y-p.y)<1e-6),ref+' ball alignment');assert(el.mirror?v.z< -1.25:v.z>0,ref+' assembly face');}
+ for(const m of contacts){const v=m.getWorldPosition(new T.Vector3());if(m.userData.part==='ball')assert(pads.some(p=>p.pin===m.userData.pin&&Math.hypot(v.x-p.x,v.y-p.y)<1e-6),ref+' ball alignment');assert(el.mirror?v.z< -1.6:v.z>0,ref+' assembly face');}
 }
 console.log('PASS: A64 396 + DDR 96/96 balls; ABM8 4/4 terminals; dimensioned envelopes; copper alignment; assembly faces.');
