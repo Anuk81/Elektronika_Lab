@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "build": "node scripts/check.mjs",
-    "test": "node test-atlas-core.mjs && node test-full-boot.mjs && node test-physical.mjs && node test-manufacturer.mjs && node test-solder.mjs"
+    "test": "node test-atlas-core.mjs && node test-full-boot.mjs && node test-physical.mjs && node test-manufacturer.mjs && node test-solder.mjs && node test-block-highlight.mjs"
   },
   "engines": {
     "node": ">=20"

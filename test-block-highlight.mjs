@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import * as T from './dist/vendor/three.module.js';
+import {highlightBlocks} from './dist/block-highlight.mjs';
+const parts=new T.Group(),groups=[{id:'power',color:'#ffb72f',elements:['U1','R1']},{id:'control',color:'#55aaff',elements:['U2']}];
+const original=new T.MeshStandardMaterial({color:'#ffffff',vertexColors:true,metalness:.8,roughness:.25});
+const a=new T.Mesh(new T.BoxGeometry(),original),b=new T.Mesh(new T.BoxGeometry(),original);a.userData={component:{name:'U1'},manufacturer:true};b.userData={component:{name:'U2'},manufacturer:true};parts.add(a,b);
+const batch=new T.InstancedMesh(new T.BoxGeometry(),new T.MeshStandardMaterial({color:'white'}),2);batch.userData.componentEntries=[{name:'R1'},{name:'R2'}];batch.setColorAt(0,new T.Color('#442233'));batch.setColorAt(1,new T.Color('#123456'));parts.add(batch);
+highlightBlocks(T,parts,groups,'power');assert.equal(a.material.vertexColors,false);assert.equal(a.material.color.getHexString(),'ffb72f');assert.equal(a.material.emissiveIntensity,.65);assert.equal(b.material.emissiveIntensity,0);assert.notEqual(a.material,b.material);assert.equal(original.vertexColors,true);const c=new T.Color();batch.getColorAt(0,c);assert.equal(c.getHexString(),'ffb72f');
+highlightBlocks(T,parts,groups,'control');assert.equal(a.material.emissiveIntensity,0);assert.equal(b.material.color.getHexString(),'55aaff');
+highlightBlocks(T,parts,groups,'off');assert.equal(a.material,original);assert.equal(b.material,original);assert.equal(a.material.metalness,.8);batch.getColorAt(0,c);assert.equal(c.getHexString(),'442233');
+highlightBlocks(T,parts,groups,'all');assert.equal(a.material.emissiveIntensity,.65);assert.equal(b.material.emissiveIntensity,.65);highlightBlocks(T,parts,groups,'off');assert.equal(a.material,original);
+console.log('PASS: imported vertex-colour CAD, independent materials, instances, block switching and exact material restoration.');
