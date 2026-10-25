@@ -5,17 +5,17 @@ const sheets={mosfet:1,logic:1,ardumoto:2,'audio-i2s':1,'lipo-charger':1};
 export function mountSignalExplorer(api,host){
  const panel=document.createElement('details');panel.className='signalExplorer';
  panel.innerHTML=`<summary>Explorar esquema y recorrido de la señal <span>PCB ↔ esquema ↔ explicación</span></summary><div class="signalToolbar"><label>Buscar referencia o red<input class="signalSearch" type="search" placeholder="R1, GND, CONTROL…"></label><label>Hoja<select class="signalSheet"></select></label><button class="signalZoomIn" aria-label="Ampliar esquema">＋</button><button class="signalZoomOut" aria-label="Reducir esquema">−</button><button class="signalFit">Ajustar</button></div><div class="signalResults"></div><div class="signalGrid"><div><p class="signalEvidence"></p><div class="signalViewport"><div class="signalDrawing"></div></div><p class="signalStatus" role="status"></p></div><div class="signalTutor"><div class="signalLesson"></div><div class="signalPart"></div></div></div><details class="signalSources"><summary>Cómo estudiar y comprobar</summary><p>Empieza por la función del bloque, localiza las mismas referencias en placa y esquema, sigue cada red y predice qué observarías antes de medir. La señal de control y la energía de alimentación pueden recorrer caminos distintos.</p><p>Las conexiones mostradas proceden de los archivos CAD de cada placa. Las explicaciones son notas didácticas originales; no son una simulación eléctrica ni lecturas de instrumentos.</p><p>Referencias de estudio: Guía para leer esquemas electrónicos, cap. 1 (págs. PDF 10–11); Circuitos electrónicos analógicos, condensadores (pág. 56), fuentes (pág. 301) y conmutación (págs. 378–379). Los PDF no se publican en la app.</p></details>`;
- host.append(panel);const $=s=>panel.querySelector(s);let boardId='',block='off',ref='',net='',step=0,zoom=1,request=0,loaded=false;
+ host.append(panel);const $=s=>panel.querySelector(s);let boardId='',block='off',ref='',net='',step=0,zoom=1,request=0,loaded=false,filterOverlay=null;
  const status=t=>$('.signalStatus').textContent=t;
  const board=()=>api.board();
  function paint(){
-  const g=board().blocks?.find(g=>g.id===block),refs=new Set(g?.elements||[]);
-  const ns=new Set(board().nets.filter(n=>n.contacts.some(c=>refs.has(c.split('.')[0]))).map(n=>n.name));
+  const g=board().blocks?.find(g=>g.id===block),refs=new Set(filterOverlay?.refs||g?.elements||[]);
+  const ns=new Set(filterOverlay?.nets||board().nets.filter(n=>n.contacts.some(c=>refs.has(c.split('.')[0]))).map(n=>n.name));
   panel.querySelectorAll('.signalDrawing [data-ref],.signalDrawing [data-net]').forEach(el=>{
    const selected=el.dataset.ref?el.dataset.ref===ref:el.dataset.net===net;
    const member=el.dataset.ref?refs.has(el.dataset.ref):ns.has(el.dataset.net);
    el.classList.toggle('signalSelected',selected);el.classList.toggle('signalMember',member);
-   el.classList.toggle('signalDim',!!g&&!member&&!selected);
+   el.classList.toggle('signalDim',!!(filterOverlay||g)&&!member&&!selected);
   });
  }
  function partInfo(){const data=componentExplanation(board(),ref),box=$('.signalPart');if(!data){box.innerHTML='<h3>Investiga un componente</h3><p>Pulsa un símbolo o busca su referencia. Verás sus conexiones y podrás localizarlo en la placa.</p>';return;}
@@ -29,8 +29,8 @@ export function mountSignalExplorer(api,host){
   const go=i=>{step=i;lesson();const s=l.steps[step];choosePart(s[1]);chooseNet(s[0]);};box.querySelectorAll('[data-step]').forEach(b=>b.onclick=()=>go(Number(b.dataset.step)));box.querySelector('.signalPrev').onclick=()=>go(step-1);box.querySelector('.signalNext').onclick=()=>go(step+1);box.querySelector('.signalShow').onclick=()=>go(step);
  }
  function fallback(){
-  const b=board(),g=b.blocks?.find(g=>g.id===block),parts=g?b.elements.filter(e=>g.elements.includes(e.name)):b.elements;
-  $('.signalDrawing').innerHTML=`<div class="signalFallback"><h3>Mapa de conexiones disponible</h3><p>No hay un esquema CAD original enlazado para esta placa. Selecciona una referencia para explorar sus redes. Este listado no sustituye al esquema.</p>${parts.map(e=>`<button data-ref="${esc(e.name)}">${esc(e.name)} · ${esc(e.value||e.package)}</button>`).join('')}</div>`;wire();
+  const b=board(),g=b.blocks?.find(g=>g.id===block),parts=filterOverlay?b.elements.filter(e=>filterOverlay.refs.includes(e.name)):g?b.elements.filter(e=>g.elements.includes(e.name)):b.elements;
+  $('.signalDrawing').innerHTML=`<div class="signalFallback"><h3>${esc(filterOverlay?.title||'Mapa de conexiones disponible')}</h3><p>No hay un esquema CAD original enlazado para esta placa. Selecciona una referencia para explorar sus redes. Este listado no sustituye al esquema.</p>${parts.map(e=>`<button data-ref="${esc(e.name)}">${esc(e.name)} · ${esc(e.value||e.package)}</button>`).join('')}</div>`;wire();
  }
  function wire(){
   panel.querySelectorAll('.signalDrawing [data-ref],.signalDrawing [data-net]').forEach(el=>{
@@ -58,11 +58,11 @@ export function mountSignalExplorer(api,host){
   out.innerHTML=parts.slice(0,20).map(e=>`<button data-find-ref="${esc(e.name)}">${esc(e.name)} · ${esc(e.value||e.package)}</button>`).join('')+nets.slice(0,20).map(n=>`<button data-find-net="${esc(n.name)}">Red ${esc(n.name)}</button>`).join('');
   out.querySelectorAll('[data-find-ref]').forEach(el=>el.onclick=()=>choosePart(el.dataset.findRef));out.querySelectorAll('[data-find-net]').forEach(el=>el.onclick=()=>chooseNet(el.dataset.findNet));status(`${parts.length} componentes y ${nets.length} redes. Hasta 20 resultados de cada tipo.`);
  }
- function refresh(){const b=board();if(boardId===b.id)return;boardId=b.id;++request;loaded=false;ref=net='';block='off';step=0;zoom=1;$('.signalSearch').value='';$('.signalResults').replaceChildren();const count=sheets[b.id]||0;$('.signalSheet').innerHTML=Array.from({length:count||1},(_,i)=>`<option value="${i+1}">${count?'Hoja '+(i+1):'Sin esquema CAD'}</option>`).join('');$('.signalSheet').value='1';$('.signalSheet').disabled=!count;
+ function refresh(){const b=board();if(boardId===b.id)return;boardId=b.id;++request;loaded=false;ref=net='';block='off';step=0;zoom=1;filterOverlay=null;$('.signalSearch').value='';$('.signalResults').replaceChildren();const count=sheets[b.id]||0;$('.signalSheet').innerHTML=Array.from({length:count||1},(_,i)=>`<option value="${i+1}">${count?'Hoja '+(i+1):'Sin esquema CAD'}</option>`).join('');$('.signalSheet').value='1';$('.signalSheet').disabled=!count;
   $('.signalEvidence').textContent=`${b.title} · ${b.educational||b.representative?'Diseño didáctico':'Conexiones importadas del CAD'}${count?' · Esquema original navegable':''}`;$('.signalDrawing').replaceChildren();applyZoom();lesson();partInfo();load();}
  panel.addEventListener('toggle',()=>{if(panel.open&&!loaded)load();});$('.signalSheet').onchange=load;$('.signalSearch').oninput=search;
  $('.signalZoomIn').onclick=()=>{zoom=Math.min(4,zoom+.25);applyZoom();};$('.signalZoomOut').onclick=()=>{zoom=Math.max(.5,zoom-.25);applyZoom();};$('.signalFit').onclick=()=>{zoom=1;applyZoom();$('.signalViewport').scrollTop=0;$('.signalViewport').scrollLeft=0;};
  document.addEventListener('circuitlab:component',e=>{if(boardId!==board().id)refresh();choosePart(e.detail,false);});
  document.addEventListener('circuitlab:net',e=>{net=e.detail;paint();});
- refresh();return {refresh,selectBlock(id){block=id;paint();if(panel.open&&!sheets[board().id])fallback();},open(){panel.open=true;if(!loaded)load();}};
+ refresh();return {refresh,selectBlock(id){block=id;filterOverlay=null;paint();if(panel.open&&!sheets[board().id])fallback();},highlight(selection){filterOverlay={refs:[...selection.refs],nets:[...selection.nets],title:selection.title};panel.open=true;if(!loaded)load();else if(!sheets[board().id])fallback();paint();const page=filterOverlay.refs.flatMap(r=>schematicIndex[board().id]?.[r]||[])[0];if(page&&Number($('.signalSheet').value)!==page){$('.signalSheet').value=String(page);load();}status('Filtro '+selection.title+': componentes y redes resaltados en esquema y PCB.');},open(){panel.open=true;if(!loaded)load();}};
 }
