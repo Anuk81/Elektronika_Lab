@@ -29,8 +29,19 @@ export function mountSignalExplorer(api,host){
   const go=i=>{step=i;lesson();const s=l.steps[step];choosePart(s[1]);chooseNet(s[0]);};box.querySelectorAll('[data-step]').forEach(b=>b.onclick=()=>go(Number(b.dataset.step)));box.querySelector('.signalPrev').onclick=()=>go(step-1);box.querySelector('.signalNext').onclick=()=>go(step+1);box.querySelector('.signalShow').onclick=()=>go(step);
  }
  function fallback(){
-  const b=board(),g=b.blocks?.find(g=>g.id===block),parts=filterOverlay?b.elements.filter(e=>filterOverlay.refs.includes(e.name)):g?b.elements.filter(e=>g.elements.includes(e.name)):b.elements;
-  $('.signalDrawing').innerHTML=`<div class="signalFallback"><h3>${esc(filterOverlay?.title||'Mapa de conexiones disponible')}</h3><p>No hay un esquema CAD original enlazado para esta placa. Selecciona una referencia para explorar sus redes. Este listado no sustituye al esquema.</p>${parts.map(e=>`<button data-ref="${esc(e.name)}">${esc(e.name)} · ${esc(e.value||e.package)}</button>`).join('')}</div>`;wire();
+  const b=board(),g=b.blocks?.find(g=>g.id===block),all=filterOverlay?b.elements.filter(e=>filterOverlay.refs.includes(e.name)):g?b.elements.filter(e=>g.elements.includes(e.name)):b.elements;
+  const parts=all.slice(0,12),refset=new Set(parts.map(e=>e.name));
+  const allNets=filterOverlay?b.nets.filter(n=>filterOverlay.nets.includes(n.name)):b.nets.filter(n=>n.contacts.some(c=>refset.has(c.slice(0,c.lastIndexOf('.')))));
+  const nets=allNets.slice(0,14),height=78+Math.max(parts.length,nets.length,3)*48;
+  const truncate=(value,max=30)=>{const text=String(value);return text.length>max?text.slice(0,max-1)+'…':text;};
+  let svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 '+height+'" role="img" aria-label="Mapa eléctrico de componentes y redes seleccionables"><rect width="760" height="'+height+'" fill="#0c2430" rx="12"/><text x="20" y="29" fill="#d8eef2" font-size="16" font-family="sans-serif">MAPA DE CONEXIONES DEL MODELO</text><text x="20" y="48" fill="#9dbdc6" font-size="11" font-family="sans-serif">Izquierda: componentes · Derecha: redes · Pulsa para investigar</text>';
+  const linked=(n,ref)=>n.contacts.some(c=>c.slice(0,c.lastIndexOf('.'))===ref);
+  parts.forEach((part,i)=>nets.forEach((n,j)=>{if(linked(n,part.name)){const y1=84+i*48,y2=84+j*48;svg+='<path d="M 318 '+y1+' C 395 '+y1+',395 '+y2+',468 '+y2+'" stroke="#3b8f94" stroke-width="2" fill="none" opacity=".8"/>';}}));
+  parts.forEach((part,i)=>{const y=65+i*48;svg+='<g data-ref="'+esc(part.name)+'" style="cursor:pointer"><rect x="20" y="'+y+'" width="298" height="37" rx="7" fill="#164450" stroke="#3d7d81"/><text x="32" y="'+(y+23)+'" fill="#e0f9f5" font-size="13" font-family="sans-serif">'+esc(truncate(part.name+' · '+(part.value||part.package),40))+'</text></g>';});
+  nets.forEach((n,i)=>{const y=65+i*48;svg+='<g data-net="'+esc(n.name)+'" style="cursor:pointer"><rect x="468" y="'+y+'" width="271" height="37" rx="7" fill="#154039" stroke="#3d7d81"/><text x="481" y="'+(y+23)+'" fill="#e0f9f5" font-size="12" font-family="sans-serif">'+esc(truncate(n.name,36))+'</text></g>';});
+  svg+='</svg>';
+  $('.signalDrawing').innerHTML='<div class="signalFallback"><h3>'+esc(filterOverlay?.title||'Mapa de conexiones disponible')+'</h3><p>Mapa interactivo reconstruido de la netlist de la PCB. <strong>No es el esquemático original del fabricante</strong>; las conexiones representadas sí proceden de los datos del modelo.</p>'+svg+((all.length>12||allNets.length>14)?'<small>Vista parcial: se muestran 12 componentes y 14 redes como máximo. Usa el buscador para el resto.</small>':'')+'</div>';
+  wire();
  }
  function wire(){
   panel.querySelectorAll('.signalDrawing [data-ref],.signalDrawing [data-net]').forEach(el=>{
