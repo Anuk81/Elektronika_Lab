@@ -1,0 +1,38 @@
+/* Per-board filter discovery: restrained accents and large, touch-friendly targets. */
+.filterExplorer {margin:14px 0 4px; border:1px solid rgba(105,227,198,.26);border-radius:15px;background:linear-gradient(145deg,rgba(33,75,77,.28),rgba(9,31,37,.4));overflow:hidden;color:var(--text,#e8f4f3)}
+.filterExplorer>summary{cursor:pointer;padding:16px 18px;font-size:16px;font-weight:750;list-style-position:inside}
+.filterExplorer>summary span{display:block;font-weight:500;font-size:12px;color:#a8c9c7;margin:5px 0 0 20px}
+.filterExplorer[open]>summary{border-bottom:1px solid rgba(148,204,205,.2)}
+.filterIntro,.filterActual,.filterTeaching,.filterDetail{margin:14px 16px}
+.filterIntro{font-size:13px;line-height:1.65;color:#c7e3df}
+.filterSectionHead,.filterDetailHead{display:flex;gap:12px;align-items:center;justify-content:space-between;margin-bottom:10px}
+.filterSectionHead>span{border:1px solid rgba(137,214,204,.3);border-radius:40px;padding:4px 10px;color:#9cfbdc}
+.filterGrid,.filterTeachingGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+.filterTeaching>summary{cursor:pointer;padding:12px 0;font-weight:650}
+.filterTeachingGrid{padding:7px 0 12px}
+.filterCard{display:flex;flex-direction:column;align-items:flex-start;gap:9px;min-height:128px;text-align:left;white-space:normal;border:1px solid rgba(137,197,205,.3);border-radius:12px;background:rgba(15,49,56,.65);color:#eefefa;padding:13px;cursor:pointer}
+.filterCard:hover,.filterCard:focus-visible{border-color:#64efc3;background:rgba(29,91,92,.8);outline-offset:2px}
+.filterCard>b{font-size:14px;line-height:1.3}
+.filterCard>small{color:#b8d1cf;font-size:12px;line-height:1.55}
+.filterBadge{letter-spacing:.07em;text-transform:uppercase;font-size:10px;font-weight:700;color:#8fe3d1}
+.filterEmpty{font-size:13px;line-height:1.55;color:#b1c9ce}
+.filterDetail{padding:16px;border:1px solid rgba(100,239,195,.45);border-radius:13px;background:rgba(11,42,51,.95)}
+.filterDetail[hidden]{display:none}
+.filterDetailHead h3{font-size:18px;line-height:1.25;margin:6px 0}
+.filterDetailHead>span{font-size:10px;letter-spacing:.1em;color:#9abdc3}
+.filterDetailGrid{display:grid;grid-template-columns:minmax(180px,1fr) minmax(235px,1.35fr);gap:18px}
+.filterDetailGrid h4{font-size:13px;margin:4px 0 8px;color:#b2ffe3}
+.filterDetailGrid p{font-size:13px;line-height:1.65;color:#d2e5e7;margin:0 0 12px}
+.filterDiagram{padding:10px;border:1px solid rgba(103,184,187,.2);border-radius:10px;min-height:170px;align-self:start;background:#0a2330}
+.filterDiagram svg{display:block;width:100%;height:auto}
+.filterFormula{font-family:ui-monospace,SFMono-Regular,monospace;color:#ffdc93!important}
+.filterRefs{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin:10px 0}
+.filterRefs b{width:100%;font-size:12px}
+.filterRefs button,.filterActions button{max-width:100%;overflow-wrap:anywhere;white-space:normal;border:1px solid rgba(106,205,200,.35);border-radius:9px;background:rgba(29,71,79,.8);color:#eafcfc;padding:8px 11px;cursor:pointer;text-align:left;font-size:12px}
+.filterRefs button:hover,.filterActions button:hover{background:#246362}
+.filterActions{display:flex;gap:9px;flex-wrap:wrap;margin-top:15px}
+.filterActions button:first-child{border-color:#64efc3}
+@media(max-width:680px){.filterDetailGrid{grid-template-columns:1fr}.filterGrid,.filterTeachingGrid{grid-template-columns:1fr}.filterExplorer>summary{font-size:14px}.filterDetail{padding:12px;margin:10px}}
+/* Schematic multi-reference highlighting keeps neutral elements unobtrusive. */
+.signalDrawing .signalMember:not(.signalSelected){filter:drop-shadow(0 0 3px #64efc3);opacity:1}
+.signalDrawing .signalDim{opacity:.3}
