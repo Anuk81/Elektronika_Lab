@@ -1,0 +1,21 @@
+name: Verify Elektronika Lab
+on:
+  push:
+    branches: [feature/filter-maps]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: node test-filter-maps.mjs
+      - run: npm test
